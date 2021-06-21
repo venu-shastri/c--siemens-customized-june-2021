@@ -6,68 +6,77 @@ using System.Threading.Tasks;
 
 namespace WhyDelegate
 {
-	public class VoidFunctionZeroLengthArgumentFunctionClass
-	{
+	//public class FunctionClass
+	//{
+	//	List<FunctionClass> _list = new List<FunctionClass>();
+	//	public void Add(FunctionClass funObj) { _list.Add(funObj); }
+	//	public void Remove(FunctionClass funObj) { _list.Remove(funObj); }
+	//}
+	//public class VoidFunctionZeroLengthArgumentFunctionClass:FunctionClass
+	//{
 
-		Type type;
-		object target;
-		string methodName;
-		System.Reflection.MethodInfo methodMetadata;
+	//	Type type;
+	//	object target;
+	//	string methodName;
+	//	System.Reflection.MethodInfo methodMetadata;
 
-		public VoidFunctionZeroLengthArgumentFunctionClass(Type type, object target,string methodName)
-		{
+	//	public VoidFunctionZeroLengthArgumentFunctionClass(Type type, object target,string methodName)
+	//	{
 
-			this.type = type;
-			this.target = target;
-			this.methodName = methodName;
-			this.methodMetadata = this.type.GetMethod(this.methodName,
-				System.Reflection.BindingFlags.NonPublic | 
-				System.Reflection.BindingFlags.Public |
-				System.Reflection.BindingFlags.Static);
-		}
-		public void Invoke()
-		{
+	//		this.type = type;
+	//		this.target = target;
+	//		this.methodName = methodName;
+	//		this.methodMetadata = this.type.GetMethod(this.methodName,
+	//			System.Reflection.BindingFlags.NonPublic | 
+	//			System.Reflection.BindingFlags.Public |
+	//			System.Reflection.BindingFlags.Static);
+	//	}
+	//	public void Invoke()
+	//	{
 
-			if (this.methodMetadata.IsStatic)
-			{
+	//		if (this.methodMetadata.IsStatic)
+	//		{
 
-				this.methodMetadata.Invoke(this.type, new Object[] { });
-			}
-		}
+	//			this.methodMetadata.Invoke(this.type, new Object[] { });
+	//		}
+	//	}
 
-	}
+	//}
 
-	public class VoidFunctionStringArgumentFunctionClass
-	{
+	//public class VoidFunctionStringArgumentFunctionClass
+	//{
 
-		Type type;
-		object target;
-		string methodName;
-		System.Reflection.MethodInfo methodMetadata;
+	//	Type type;
+	//	object target;
+	//	string methodName;
+	//	System.Reflection.MethodInfo methodMetadata;
 
-		public VoidFunctionStringArgumentFunctionClass(Type type, object target, string methodName)
-		{
+	//	public VoidFunctionStringArgumentFunctionClass(Type type, object target, string methodName)
+	//	{
 
-			this.type = type;
-			this.target = target;
-			this.methodName = methodName;
-			this.methodMetadata = this.type.GetMethod(this.methodName,
-				System.Reflection.BindingFlags.NonPublic |
-				System.Reflection.BindingFlags.Public |
-				System.Reflection.BindingFlags.Static);
-		}
-		public void Invoke(string message)
-		{
+	//		this.type = type;
+	//		this.target = target;
+	//		this.methodName = methodName;
+	//		this.methodMetadata = this.type.GetMethod(this.methodName,
+	//			System.Reflection.BindingFlags.NonPublic |
+	//			System.Reflection.BindingFlags.Public |
+	//			System.Reflection.BindingFlags.Static);
+	//	}
+	//	public void Invoke(string message)
+	//	{
 
-			if (this.methodMetadata.IsStatic)
-			{
+	//		if (this.methodMetadata.IsStatic)
+	//		{
 
-				this.methodMetadata.Invoke(this.type, new Object[] { message});
-			}
-		}
+	//			this.methodMetadata.Invoke(this.type, new Object[] { message});
+	//		}
+	//	}
 
-	}
+	//}
 
+
+	public delegate void VoidFunctionZeroLengthArgumentFunctionClass();
+	public delegate void VoidFunctionStringArgumentFunctionClass(string message);
 	public class Program
 	{
 		static void MoreFun(string message)
@@ -98,12 +107,15 @@ namespace WhyDelegate
 
 			//System.Reflection.MethodInfo methodMetadata=typeof(Program).GetMethod("Fun",System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Static);
 			VoidFunctionZeroLengthArgumentFunctionClass _funObj =
-				new VoidFunctionZeroLengthArgumentFunctionClass(typeof(Program), null, "Fun");
+				new VoidFunctionZeroLengthArgumentFunctionClass(Program.Fun);
 
 			VoidFunctionZeroLengthArgumentFunctionClass _barObj =
-				new VoidFunctionZeroLengthArgumentFunctionClass(typeof(Program), null, "Bar");
-			VoidFunctionStringArgumentFunctionClass _newFuncObj = new VoidFunctionStringArgumentFunctionClass(typeof(Program), null, "MoreFun");
-			Program.Foo(_funObj / _barObj, _newFuncObj);
+				new VoidFunctionZeroLengthArgumentFunctionClass(Program.Bar);
+			VoidFunctionStringArgumentFunctionClass _newFuncObj = 
+				new VoidFunctionStringArgumentFunctionClass(Program.MoreFun);
+			//VoidFunctionZeroLengthArgumentFunctionClass compositeFuncObj=	System.Delegate.Combine(_funObj, _barObj) as VoidFunctionZeroLengthArgumentFunctionClass;
+			VoidFunctionZeroLengthArgumentFunctionClass compositeFuncObj = _funObj + _barObj;
+			Program.Foo(compositeFuncObj, _newFuncObj);
 
 
 
