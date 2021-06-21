@@ -6,27 +6,63 @@ using System.Threading.Tasks;
 
 namespace WhyDelegate
 {
-	public class FunctionClass
+	public class VoidFunctionZeroLengthArgumentFunctionClass
 	{
 
 		Type type;
 		object target;
-		System.Reflection.MethodInfo method;
+		string methodName;
+		System.Reflection.MethodInfo methodMetadata;
 
-		public FunctionClass(Type type, object target, System.Reflection.MethodInfo method)
+		public VoidFunctionZeroLengthArgumentFunctionClass(Type type, object target,string methodName)
 		{
 
 			this.type = type;
 			this.target = target;
-			this.method = method;
+			this.methodName = methodName;
+			this.methodMetadata = this.type.GetMethod(this.methodName,
+				System.Reflection.BindingFlags.NonPublic | 
+				System.Reflection.BindingFlags.Public |
+				System.Reflection.BindingFlags.Static);
 		}
 		public void Invoke()
 		{
 
-			if (this.method.IsStatic)
+			if (this.methodMetadata.IsStatic)
 			{
 
-				this.method.Invoke(this.type, new Object[] { });
+				this.methodMetadata.Invoke(this.type, new Object[] { });
+			}
+		}
+
+	}
+
+	public class VoidFunctionStringArgumentFunctionClass
+	{
+
+		Type type;
+		object target;
+		string methodName;
+		System.Reflection.MethodInfo methodMetadata;
+
+		public VoidFunctionStringArgumentFunctionClass(Type type, object target, string methodName)
+		{
+
+			this.type = type;
+			this.target = target;
+			this.methodName = methodName;
+			this.methodMetadata = this.type.GetMethod(this.methodName,
+				System.Reflection.BindingFlags.NonPublic |
+				System.Reflection.BindingFlags.Public |
+				System.Reflection.BindingFlags.Static);
+		}
+		public void Invoke(string message)
+		{
+
+			if (this.methodMetadata.IsStatic)
+			{
+
+				this.methodMetadata.Invoke(this.type, new Object[] { message});
 			}
 		}
 
@@ -34,24 +70,30 @@ namespace WhyDelegate
 
 	public class Program
 	{
+		static void MoreFun(string message)
+        {
+			Console.WriteLine("MoreFun Invoked "+message);
+		}
 		static void Fun()
 		{
 
 			Console.WriteLine("fun Invoked");
 		}
 
-		static void Foo(FunctionClass funcObj)
+		static void Foo(VoidFunctionZeroLengthArgumentFunctionClass funcObj, VoidFunctionStringArgumentFunctionClass voidFuncObj)
 		{
 
 			funcObj.Invoke();
+			voidFuncObj.Invoke("Hello");
 		}
 
 		public static void Main()
 		{
 
 			//System.Reflection.MethodInfo methodMetadata=typeof(Program).GetMethod("Fun",System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Static);
-			FunctionClass _funcObj = new FunctionClass(typeof(Program), null, typeof(Program).GetMethod("Fun", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Static));
-			Program.Foo(_funcObj);
+			VoidFunctionZeroLengthArgumentFunctionClass _funcObj = new VoidFunctionZeroLengthArgumentFunctionClass(typeof(Program), null, "Fun");
+			VoidFunctionStringArgumentFunctionClass _newFuncObj = new VoidFunctionStringArgumentFunctionClass(typeof(Program), null, "MoreFun");
+			Program.Foo(_funcObj, _newFuncObj);
 
 
 

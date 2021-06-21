@@ -5,3 +5,10 @@ C:\Users\user\source\repos\siemens\Examples\WhyDelegate\obj\Debug\WhyDelegate.cs
 C:\Users\user\source\repos\siemens\Examples\WhyDelegate\obj\Debug\WhyDelegate.csproj.CoreCompileInputs.cache
 C:\Users\user\source\repos\siemens\Examples\WhyDelegate\obj\Debug\WhyDelegate.exe
 C:\Users\user\source\repos\siemens\Examples\WhyDelegate\obj\Debug\WhyDelegate.pdb
+E:\c--siemens-customized-june-2021\WhyDelegate\bin\Debug\WhyDelegate.exe.config
+E:\c--siemens-customized-june-2021\WhyDelegate\bin\Debug\WhyDelegate.exe
+E:\c--siemens-customized-june-2021\WhyDelegate\bin\Debug\WhyDelegate.pdb
+E:\c--siemens-customized-june-2021\WhyDelegate\obj\Debug\WhyDelegate.csprojAssemblyReference.cache
+E:\c--siemens-customized-june-2021\WhyDelegate\obj\Debug\WhyDelegate.csproj.CoreCompileInputs.cache
+E:\c--siemens-customized-june-2021\WhyDelegate\obj\Debug\WhyDelegate.exe
+E:\c--siemens-customized-june-2021\WhyDelegate\obj\Debug\WhyDelegate.pdb
