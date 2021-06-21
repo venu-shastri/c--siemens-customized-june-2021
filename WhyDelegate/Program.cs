@@ -79,11 +79,17 @@ namespace WhyDelegate
 
 			Console.WriteLine("fun Invoked");
 		}
+		static void Bar() {
 
-		static void Foo(VoidFunctionZeroLengthArgumentFunctionClass funcObj, VoidFunctionStringArgumentFunctionClass voidFuncObj)
+			Console.WriteLine("Bar Invoked");
+		}
+
+		static void Foo(VoidFunctionZeroLengthArgumentFunctionClass funcObj,
+			VoidFunctionStringArgumentFunctionClass voidFuncObj)
 		{
 
 			funcObj.Invoke();
+			
 			voidFuncObj.Invoke("Hello");
 		}
 
@@ -91,9 +97,13 @@ namespace WhyDelegate
 		{
 
 			//System.Reflection.MethodInfo methodMetadata=typeof(Program).GetMethod("Fun",System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Static);
-			VoidFunctionZeroLengthArgumentFunctionClass _funcObj = new VoidFunctionZeroLengthArgumentFunctionClass(typeof(Program), null, "Fun");
+			VoidFunctionZeroLengthArgumentFunctionClass _funObj =
+				new VoidFunctionZeroLengthArgumentFunctionClass(typeof(Program), null, "Fun");
+
+			VoidFunctionZeroLengthArgumentFunctionClass _barObj =
+				new VoidFunctionZeroLengthArgumentFunctionClass(typeof(Program), null, "Bar");
 			VoidFunctionStringArgumentFunctionClass _newFuncObj = new VoidFunctionStringArgumentFunctionClass(typeof(Program), null, "MoreFun");
-			Program.Foo(_funcObj, _newFuncObj);
+			Program.Foo(_funObj / _barObj, _newFuncObj);
 
 
 
