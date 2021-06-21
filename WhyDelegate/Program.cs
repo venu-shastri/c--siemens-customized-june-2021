@@ -113,6 +113,7 @@ namespace WhyDelegate
 				new VoidFunctionZeroLengthArgumentFunctionClass(Program.Bar);
 			VoidFunctionStringArgumentFunctionClass _newFuncObj = 
 				new VoidFunctionStringArgumentFunctionClass(Program.MoreFun);
+			
 			//VoidFunctionZeroLengthArgumentFunctionClass compositeFuncObj=	System.Delegate.Combine(_funObj, _barObj) as VoidFunctionZeroLengthArgumentFunctionClass;
 			VoidFunctionZeroLengthArgumentFunctionClass compositeFuncObj = _funObj + _barObj;
 			Program.Foo(compositeFuncObj, _newFuncObj);
