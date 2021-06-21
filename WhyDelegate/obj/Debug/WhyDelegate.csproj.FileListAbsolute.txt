@@ -1,0 +1,7 @@
+C:\Users\user\source\repos\siemens\Examples\WhyDelegate\bin\Debug\WhyDelegate.exe.config
+C:\Users\user\source\repos\siemens\Examples\WhyDelegate\bin\Debug\WhyDelegate.exe
+C:\Users\user\source\repos\siemens\Examples\WhyDelegate\bin\Debug\WhyDelegate.pdb
+C:\Users\user\source\repos\siemens\Examples\WhyDelegate\obj\Debug\WhyDelegate.csprojAssemblyReference.cache
+C:\Users\user\source\repos\siemens\Examples\WhyDelegate\obj\Debug\WhyDelegate.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\siemens\Examples\WhyDelegate\obj\Debug\WhyDelegate.exe
+C:\Users\user\source\repos\siemens\Examples\WhyDelegate\obj\Debug\WhyDelegate.pdb
