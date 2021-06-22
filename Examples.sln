@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhyDelegate", "WhyDelegate\WhyDelegate.csproj", "{D0A804CE-B9B6-4FE5-85B0-72DE8FD36221}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reusability", "Reusability\Reusability.csproj", "{C40488B1-5F8B-4628-8A48-D36DA39557EA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{D0A804CE-B9B6-4FE5-85B0-72DE8FD36221}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D0A804CE-B9B6-4FE5-85B0-72DE8FD36221}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D0A804CE-B9B6-4FE5-85B0-72DE8FD36221}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C40488B1-5F8B-4628-8A48-D36DA39557EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C40488B1-5F8B-4628-8A48-D36DA39557EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C40488B1-5F8B-4628-8A48-D36DA39557EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C40488B1-5F8B-4628-8A48-D36DA39557EA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
