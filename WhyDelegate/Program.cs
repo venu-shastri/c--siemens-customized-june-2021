@@ -102,7 +102,7 @@ namespace WhyDelegate
 			voidFuncObj.Invoke("Hello");
 		}
 
-		public static void Main()
+		public static void Main_old()
 		{
 
 			//System.Reflection.MethodInfo methodMetadata=typeof(Program).GetMethod("Fun",System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Static);

@@ -13,7 +13,11 @@ namespace WhyDelegate
         public int  Age { get; set; }
         public string  Location { get; set; }
     }
-    public class EmployeeInMemoryRepository
+    public interface IEmployeeRepository
+    {
+        IEnumerable<Employee> GetAll();
+    }
+    public class EmployeeInMemoryRepository:IEmployeeRepository
     {
         List<Employee> _employees = new List<Employee>
         {
@@ -24,23 +28,96 @@ namespace WhyDelegate
         };
         public IEnumerable<Employee> GetAll() { return _employees; }
     }
-    public class EmploySearchService
+
+    public interface IFilter
     {
-        EmployeeInMemoryRepository _repo = new EmployeeInMemoryRepository();
-        public IEnumerable<Employee> SearchById(string id)
+        IEnumerable<Employee> Filter(IEnumerable<Employee> source);
+    }
+
+    public class SearchByIdFilter:IFilter
+    {
+       public string ID { get; set; }
+
+        public IEnumerable<Employee> Filter(IEnumerable<Employee> source)
         {
-            throw new NotImplementedException();
-        }
-        public IEnumerable<Employee> SearchByName(string name)
-        {
-            throw new NotImplementedException();
-        }
-        public IEnumerable<Employee> SearchByLocation(string location)
-        {
-            throw new NotImplementedException();
+           foreach(Employee item in source)
+            {
+                if (item.ID == ID)
+                {
+
+                    yield return item;
+                }
+            }
         }
     }
-    class Problem
+
+    public class SearchByNameFilter : IFilter
     {
+        public string Name { get; set; }
+        public IEnumerable<Employee> Filter(IEnumerable<Employee> source)
+        {
+            foreach (Employee item in source)
+            {
+                if (item.Name == Name)
+                {
+
+                    yield return item;
+                }
+            }
+
+        }
+    }
+    public class EmploySearchService
+    {
+        IEmployeeRepository _repo = null;
+        //Constructor Injection
+        public EmploySearchService(IEmployeeRepository repo)
+        {
+            this._repo = repo;
+        }
+        //public IEnumerable<Employee> Search(IFilter filter)
+        //{
+        //    return filter.Filter(this._repo.GetAll());
+        //}
+        public IEnumerable<Employee> Search(Func<Employee,bool> filter)
+        {
+            IEnumerable<Employee> employees = this._repo.GetAll();
+            foreach(Employee emp in employees)
+            {
+                if (filter(emp))
+                {
+                    yield return emp;
+                }
+            }
+
+        }
+       
+    }
+
+    public class EntryPoint
+    {
+        //Pure Function  -> Parallel 
+        //Output is Predicatble : Unit test friendly
+        
+        static bool  CheckIdValueEqaulsToE100(Employee source)
+        {
+            return source.ID == "E100";
+        }
+        static bool CheckIdValueEqaulsToE200(Employee source)
+        {
+            return source.ID == "E200";
+        }
+        static bool CheckNameEqaulsToTom(Employee source)
+        {
+            return source.Name == "TOM";
+        }
+        static void Main()
+        {
+            EmploySearchService _searchService = new EmploySearchService(new EmployeeInMemoryRepository());
+          IEnumerable<Employee> result=  _searchService.Search(new Func<Employee, bool>(CheckIdValueEqaulsToE100));
+            result = _searchService.Search(new Func<Employee, bool>(CheckIdValueEqaulsToE200));
+            result = _searchService.Search(new Func<Employee, bool>(CheckNameEqaulsToTom));
+
+        }
     }
 }
