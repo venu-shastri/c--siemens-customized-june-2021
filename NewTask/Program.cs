@@ -10,6 +10,11 @@ namespace NewTask
     {
         static void Main(string[] args)
         {
+            //Select All emplyoyess Age > 40 
+            //Select Employee Who's ID = EMP100;
+
+            System.Linq.Enumerable.Where()
+
         }
     }
 }

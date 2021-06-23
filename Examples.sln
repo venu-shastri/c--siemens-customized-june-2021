@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhyDelegate", "WhyDelegate\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reusability", "Reusability\Reusability.csproj", "{C40488B1-5F8B-4628-8A48-D36DA39557EA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewTask", "NewTask\NewTask.csproj", "{CE38B19F-D7F5-4D04-BF2A-1A8FBDB3F6E6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{C40488B1-5F8B-4628-8A48-D36DA39557EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C40488B1-5F8B-4628-8A48-D36DA39557EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C40488B1-5F8B-4628-8A48-D36DA39557EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE38B19F-D7F5-4D04-BF2A-1A8FBDB3F6E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE38B19F-D7F5-4D04-BF2A-1A8FBDB3F6E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE38B19F-D7F5-4D04-BF2A-1A8FBDB3F6E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE38B19F-D7F5-4D04-BF2A-1A8FBDB3F6E6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
