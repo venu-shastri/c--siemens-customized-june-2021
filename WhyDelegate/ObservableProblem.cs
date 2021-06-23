@@ -32,7 +32,7 @@ namespace WhyDelegate
     {
         public void Clear()
         {
-            Console.WriteLine("Clearing TextBox Content !!!! .....Done")
+            Console.WriteLine("Clearing TextBox Content !!!! .....Done");
         }
     }
     public class ObservableProblem

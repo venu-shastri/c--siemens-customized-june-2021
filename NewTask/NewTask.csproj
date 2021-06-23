@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C40488B1-5F8B-4628-8A48-D36DA39557EA}</ProjectGuid>
+    <ProjectGuid>{CE38B19F-D7F5-4D04-BF2A-1A8FBDB3F6E6}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Reusability</RootNamespace>
-    <AssemblyName>Reusability</AssemblyName>
+    <RootNamespace>NewTask</RootNamespace>
+    <AssemblyName>NewTask</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,10 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FluentInterfacePattern.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Siemens\Linq\Enumerable.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
