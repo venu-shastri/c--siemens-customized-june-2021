@@ -103,7 +103,13 @@ namespace NewTask
             resultline = _provider.Lines.Where((dynamic line) => { return line.LOCATION == "BLR"; }).ToList();
             foreach (dynamic _line in resultline)
             {
-                Console.WriteLine(_line.ID.ToString() + "," + _line.NAME.ToString() + "," + _line.AGE + " ," + _line.LOCATION);
+                // Console.WriteLine(_line.ID.ToString() + "," + _line.NAME.ToString() + "," + _line.AGE + " ," + _line.LOCATION);
+                Console.WriteLine(
+                    $"{_line.ID}," +
+                    $"{_line.NAME}," +
+                    $"{_line.AGE}," +
+                    $"{_line.LOCATION}");
+
             }
 
         }
@@ -165,5 +171,15 @@ namespace NewTask
         }
     }
 
+    void Code(dynamic arg)
+    {
+
+        int x = 10;
+        var y=20;
+        dynamic z;
+        object a;
+        z.
+
+    }
     
 }
