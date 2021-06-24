@@ -38,6 +38,7 @@ namespace NewTask
             if (_expressions.ContainsKey(binder.Name))
             {
                var expression= _expressions[binder.Name];
+               
                 
                result= expression.Compile().Invoke((int)args[0], (int)args[1]);
                 return true;
@@ -70,10 +71,11 @@ namespace NewTask
 
     class Program
     {
-        static void Main(string[] args)
+        static void Main_old(string[] args)
         {
             //Late Binding - Use Reflection (API to query Metadata)
             dynamic obj = new DynamicCalculator();
+            //Object obj=new DynamicCalculator();
             //Expression
             Console.WriteLine(obj.Add(10, 20));
             Console.WriteLine(obj.Sub(10, 20));
@@ -88,11 +90,80 @@ namespace NewTask
             dynamic employee= new ElasticObject();
             employee.Eid = "E100";
             employee.Name = "Hary";
-            Console.WriteLine(employee.Id + " " + employee.Name);
+            Console.WriteLine(employee.Eid + " " + employee.Name);
+
+        }
+
+        static void Main()
+        {
+            CSVAsEnumerable _provider = new CSVAsEnumerable() { FilePath = "..//..//Employee.csv" };
+           dynamic resultline= _provider.Lines.Where((dynamic line) => { return line.ID == "EMP100"; }).FirstOrDefault();
+            Console.WriteLine(resultline.NAME.ToString() +","+resultline.AGE+" ,"+resultline.LOCATION);
+
+            resultline = _provider.Lines.Where((dynamic line) => { return line.LOCATION == "BLR"; }).ToList();
+            foreach (dynamic _line in resultline)
+            {
+                Console.WriteLine(_line.ID.ToString() + "," + _line.NAME.ToString() + "," + _line.AGE + " ," + _line.LOCATION);
+            }
 
         }
          
 
      
     }
+
+    public class CsvLine :System.Dynamic.DynamicObject{
+
+        List<string> headerContent = new List<string>();
+        List<string> lineContent = new List<string>();
+        public CsvLine(string header,string line)
+        {
+            this.headerContent = header.Split(',').ToList();
+            this.lineContent = line.Split(',').ToList();
+        }
+        public override bool TryGetMember(GetMemberBinder binder, out object result)
+        {
+            result = null;
+            int index = headerContent.IndexOf(binder.Name);
+            if(index != -1)
+            {
+                result = this.lineContent[index];
+                return true;
+            }
+            return false;
+        }
+
+    }
+
+
+    public class CSVAsEnumerable
+    {
+        public string FilePath { get; set; }
+
+        public IEnumerable<CsvLine> Lines
+        {
+            get
+            {
+                return GetAllLines();
+            }
+
+        }
+        List<CsvLine> GetAllLines()
+        {
+            System.IO.StreamReader _reader = new System.IO.StreamReader(this.FilePath);
+           string header= _reader.ReadLine();
+            List<CsvLine> _csvLines = new List<CsvLine>();
+            while (!_reader.EndOfStream)
+            {
+               string line= _reader.ReadLine();
+                CsvLine _lineItem = new CsvLine(header, line);
+                _csvLines.Add(_lineItem);
+            }
+            return _csvLines;
+                
+
+        }
+    }
+
+    
 }
