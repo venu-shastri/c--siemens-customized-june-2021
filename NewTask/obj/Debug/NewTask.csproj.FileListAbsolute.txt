@@ -1,0 +1,7 @@
+E:\c--siemens-customized-june-2021\NewTask\bin\Debug\NewTask.exe.config
+E:\c--siemens-customized-june-2021\NewTask\bin\Debug\NewTask.exe
+E:\c--siemens-customized-june-2021\NewTask\bin\Debug\NewTask.pdb
+E:\c--siemens-customized-june-2021\NewTask\obj\Debug\NewTask.csprojAssemblyReference.cache
+E:\c--siemens-customized-june-2021\NewTask\obj\Debug\NewTask.csproj.CoreCompileInputs.cache
+E:\c--siemens-customized-june-2021\NewTask\obj\Debug\NewTask.exe
+E:\c--siemens-customized-june-2021\NewTask\obj\Debug\NewTask.pdb
