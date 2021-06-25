@@ -1,0 +1,7 @@
+E:\c--siemens-customized-june-2021\SychronizationApp\bin\Debug\SychronizationApp.exe.config
+E:\c--siemens-customized-june-2021\SychronizationApp\bin\Debug\SychronizationApp.exe
+E:\c--siemens-customized-june-2021\SychronizationApp\bin\Debug\SychronizationApp.pdb
+E:\c--siemens-customized-june-2021\SychronizationApp\obj\Debug\SychronizationApp.csprojAssemblyReference.cache
+E:\c--siemens-customized-june-2021\SychronizationApp\obj\Debug\SychronizationApp.csproj.CoreCompileInputs.cache
+E:\c--siemens-customized-june-2021\SychronizationApp\obj\Debug\SychronizationApp.exe
+E:\c--siemens-customized-june-2021\SychronizationApp\obj\Debug\SychronizationApp.pdb

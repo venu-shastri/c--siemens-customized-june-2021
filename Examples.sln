@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewTask", "NewTask\NewTask.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncProgram", "AsyncProgram\AsyncProgram.csproj", "{EE78956F-A3CA-4921-B9B4-DD88B0DCF7BA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SychronizationApp", "SychronizationApp\SychronizationApp.csproj", "{57D332ED-0EB7-4D1C-A65D-3BE9C68CBFC7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{EE78956F-A3CA-4921-B9B4-DD88B0DCF7BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EE78956F-A3CA-4921-B9B4-DD88B0DCF7BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EE78956F-A3CA-4921-B9B4-DD88B0DCF7BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57D332ED-0EB7-4D1C-A65D-3BE9C68CBFC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57D332ED-0EB7-4D1C-A65D-3BE9C68CBFC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57D332ED-0EB7-4D1C-A65D-3BE9C68CBFC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57D332ED-0EB7-4D1C-A65D-3BE9C68CBFC7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
