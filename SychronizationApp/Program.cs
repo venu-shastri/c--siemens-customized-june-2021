@@ -114,10 +114,7 @@ namespace SychronizationApp
     }
 
     public static  class BackgroundTasks
-    {
-        
-        
-
+    { 
         public static void Task1() {
             for (int i = 0; i < 10; i++)
             {
@@ -146,17 +143,22 @@ namespace SychronizationApp
     {
         static void Main(string[] args)
         {
+
+            //  new Thread(Singleton.Instance.UpdateState).Start();
+            //new Thread(Singleton.Instance.AppendState).Start();
+            // new Thread(Singleton.Instance.GetState).Start();
+            //new Thread(Singleton.Instance.GetState).Start();
+
+            AutoResetEvent _signal = new AutoResetEvent(false);
             
-                //  new Thread(Singleton.Instance.UpdateState).Start();
-                //new Thread(Singleton.Instance.AppendState).Start();
-                // new Thread(Singleton.Instance.GetState).Start();
-                //new Thread(Singleton.Instance.GetState).Start();
+
                 System.Threading.ThreadPool.QueueUserWorkItem((obj) => { BackgroundTasks.Task1(); });
                 System.Threading.ThreadPool.QueueUserWorkItem((obj) => { BackgroundTasks.Task2(); });
                 System.Threading.ThreadPool.QueueUserWorkItem((obj) => { BackgroundTasks.Task3(); });
-            
-                
-            
-            }
+                //WaitHandle.WaitAny(/* Array of WaitHandles */);
+                //WaitHandle.WaitAll(/* Array of WaitHandles */);
+
+
+        }
     }
 }
