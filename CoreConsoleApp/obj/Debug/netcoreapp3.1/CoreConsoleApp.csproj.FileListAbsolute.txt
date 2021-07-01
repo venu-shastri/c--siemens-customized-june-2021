@@ -1,0 +1,13 @@
+E:\c--siemens-customized-june-2021\CoreConsoleApp\bin\Debug\netcoreapp3.1\CoreConsoleApp.exe
+E:\c--siemens-customized-june-2021\CoreConsoleApp\bin\Debug\netcoreapp3.1\CoreConsoleApp.deps.json
+E:\c--siemens-customized-june-2021\CoreConsoleApp\bin\Debug\netcoreapp3.1\CoreConsoleApp.runtimeconfig.json
+E:\c--siemens-customized-june-2021\CoreConsoleApp\bin\Debug\netcoreapp3.1\CoreConsoleApp.runtimeconfig.dev.json
+E:\c--siemens-customized-june-2021\CoreConsoleApp\bin\Debug\netcoreapp3.1\CoreConsoleApp.dll
+E:\c--siemens-customized-june-2021\CoreConsoleApp\bin\Debug\netcoreapp3.1\CoreConsoleApp.pdb
+E:\c--siemens-customized-june-2021\CoreConsoleApp\obj\Debug\netcoreapp3.1\CoreConsoleApp.csprojAssemblyReference.cache
+E:\c--siemens-customized-june-2021\CoreConsoleApp\obj\Debug\netcoreapp3.1\CoreConsoleApp.AssemblyInfoInputs.cache
+E:\c--siemens-customized-june-2021\CoreConsoleApp\obj\Debug\netcoreapp3.1\CoreConsoleApp.AssemblyInfo.cs
+E:\c--siemens-customized-june-2021\CoreConsoleApp\obj\Debug\netcoreapp3.1\CoreConsoleApp.csproj.CoreCompileInputs.cache
+E:\c--siemens-customized-june-2021\CoreConsoleApp\obj\Debug\netcoreapp3.1\CoreConsoleApp.dll
+E:\c--siemens-customized-june-2021\CoreConsoleApp\obj\Debug\netcoreapp3.1\CoreConsoleApp.pdb
+E:\c--siemens-customized-june-2021\CoreConsoleApp\obj\Debug\netcoreapp3.1\CoreConsoleApp.genruntimeconfig.cache

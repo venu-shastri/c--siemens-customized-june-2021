@@ -13,7 +13,7 @@ namespace AsyncProgram
     class Program
     {
         //Caller
-        static void Main(string[] args)
+        static void Main_(string[] args)
         {
             // Search("abc");//Synchrnous Program
             //begin New Thread(Execution Path) -> Search
