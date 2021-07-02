@@ -45,9 +45,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="7.0\DestructionExample.cs" />
+    <Compile Include="7.0\Discard.cs" />
     <Compile Include="7.0\NamedTuples.cs" />
+    <Compile Include="7.0\Numeric_literal_syntax.cs" />
     <Compile Include="7.0\OutVariable.cs" />
     <Compile Include="7.0\PatternMatching.cs" />
+    <Compile Include="7.0\RefReturn.cs" />
+    <Compile Include="7.0\ThrowExpression.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

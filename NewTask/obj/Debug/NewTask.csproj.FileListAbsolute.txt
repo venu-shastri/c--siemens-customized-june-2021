@@ -5,3 +5,4 @@ E:\c--siemens-customized-june-2021\NewTask\obj\Debug\NewTask.csprojAssemblyRefer
 E:\c--siemens-customized-june-2021\NewTask\obj\Debug\NewTask.csproj.CoreCompileInputs.cache
 E:\c--siemens-customized-june-2021\NewTask\obj\Debug\NewTask.exe
 E:\c--siemens-customized-june-2021\NewTask\obj\Debug\NewTask.pdb
+E:\c--siemens-customized-june-2021\NewTask\obj\Debug\NewTask.csproj.AssemblyReference.cache

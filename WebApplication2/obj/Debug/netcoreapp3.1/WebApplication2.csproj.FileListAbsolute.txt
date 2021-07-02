@@ -1,6 +1,5 @@
 E:\c--siemens-customized-june-2021\WebApplication2\bin\Debug\netcoreapp3.1\appsettings.Development.json
 E:\c--siemens-customized-june-2021\WebApplication2\bin\Debug\netcoreapp3.1\appsettings.json
-E:\c--siemens-customized-june-2021\WebApplication2\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
 E:\c--siemens-customized-june-2021\WebApplication2\bin\Debug\netcoreapp3.1\WebApplication2.exe
 E:\c--siemens-customized-june-2021\WebApplication2\bin\Debug\netcoreapp3.1\WebApplication2.deps.json
 E:\c--siemens-customized-june-2021\WebApplication2\bin\Debug\netcoreapp3.1\WebApplication2.runtimeconfig.json
@@ -9,7 +8,6 @@ E:\c--siemens-customized-june-2021\WebApplication2\bin\Debug\netcoreapp3.1\WebAp
 E:\c--siemens-customized-june-2021\WebApplication2\bin\Debug\netcoreapp3.1\WebApplication2.pdb
 E:\c--siemens-customized-june-2021\WebApplication2\bin\Debug\netcoreapp3.1\WebApplication2.Views.dll
 E:\c--siemens-customized-june-2021\WebApplication2\bin\Debug\netcoreapp3.1\WebApplication2.Views.pdb
-E:\c--siemens-customized-june-2021\WebApplication2\obj\Debug\netcoreapp3.1\WebApplication2.csprojAssemblyReference.cache
 E:\c--siemens-customized-june-2021\WebApplication2\obj\Debug\netcoreapp3.1\WebApplication2.AssemblyInfoInputs.cache
 E:\c--siemens-customized-june-2021\WebApplication2\obj\Debug\netcoreapp3.1\WebApplication2.AssemblyInfo.cs
 E:\c--siemens-customized-june-2021\WebApplication2\obj\Debug\netcoreapp3.1\WebApplication2.csproj.CoreCompileInputs.cache
@@ -35,3 +33,5 @@ E:\c--siemens-customized-june-2021\WebApplication2\obj\Debug\netcoreapp3.1\WebAp
 E:\c--siemens-customized-june-2021\WebApplication2\obj\Debug\netcoreapp3.1\WebApplication2.pdb
 E:\c--siemens-customized-june-2021\WebApplication2\obj\Debug\netcoreapp3.1\WebApplication2.genruntimeconfig.cache
 E:\c--siemens-customized-june-2021\WebApplication2\obj\Debug\netcoreapp3.1\WebApplication2.csproj.CopyComplete
+E:\c--siemens-customized-june-2021\WebApplication2\obj\Debug\netcoreapp3.1\WebApplication2.csproj.AssemblyReference.cache
+E:\c--siemens-customized-june-2021\WebApplication2\obj\Debug\netcoreapp3.1\scopedcss\bundle\WebApplication2.styles.css

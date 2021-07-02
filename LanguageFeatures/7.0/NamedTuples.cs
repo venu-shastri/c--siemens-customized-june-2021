@@ -8,6 +8,9 @@ namespace LanguageFeatures._7._0
 {
     class NamedTuples
     {
+        static Tuple<int, int, int> GetRecord() { }
+
+        static (int x, int y, int z) GetRecord() { }
         static void Main()
         {
             //Before C# 7.0

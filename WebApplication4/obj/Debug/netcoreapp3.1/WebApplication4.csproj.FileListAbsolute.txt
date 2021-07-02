@@ -1,13 +1,11 @@
 E:\c--siemens-customized-june-2021\WebApplication4\bin\Debug\netcoreapp3.1\appsettings.Development.json
 E:\c--siemens-customized-june-2021\WebApplication4\bin\Debug\netcoreapp3.1\appsettings.json
-E:\c--siemens-customized-june-2021\WebApplication4\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
 E:\c--siemens-customized-june-2021\WebApplication4\bin\Debug\netcoreapp3.1\WebApplication4.exe
 E:\c--siemens-customized-june-2021\WebApplication4\bin\Debug\netcoreapp3.1\WebApplication4.deps.json
 E:\c--siemens-customized-june-2021\WebApplication4\bin\Debug\netcoreapp3.1\WebApplication4.runtimeconfig.json
 E:\c--siemens-customized-june-2021\WebApplication4\bin\Debug\netcoreapp3.1\WebApplication4.runtimeconfig.dev.json
 E:\c--siemens-customized-june-2021\WebApplication4\bin\Debug\netcoreapp3.1\WebApplication4.dll
 E:\c--siemens-customized-june-2021\WebApplication4\bin\Debug\netcoreapp3.1\WebApplication4.pdb
-E:\c--siemens-customized-june-2021\WebApplication4\obj\Debug\netcoreapp3.1\WebApplication4.csprojAssemblyReference.cache
 E:\c--siemens-customized-june-2021\WebApplication4\obj\Debug\netcoreapp3.1\WebApplication4.AssemblyInfoInputs.cache
 E:\c--siemens-customized-june-2021\WebApplication4\obj\Debug\netcoreapp3.1\WebApplication4.AssemblyInfo.cs
 E:\c--siemens-customized-june-2021\WebApplication4\obj\Debug\netcoreapp3.1\WebApplication4.csproj.CoreCompileInputs.cache
@@ -18,3 +16,5 @@ E:\c--siemens-customized-june-2021\WebApplication4\obj\Debug\netcoreapp3.1\stati
 E:\c--siemens-customized-june-2021\WebApplication4\obj\Debug\netcoreapp3.1\WebApplication4.dll
 E:\c--siemens-customized-june-2021\WebApplication4\obj\Debug\netcoreapp3.1\WebApplication4.pdb
 E:\c--siemens-customized-june-2021\WebApplication4\obj\Debug\netcoreapp3.1\WebApplication4.genruntimeconfig.cache
+E:\c--siemens-customized-june-2021\WebApplication4\obj\Debug\netcoreapp3.1\WebApplication4.csproj.AssemblyReference.cache
+E:\c--siemens-customized-june-2021\WebApplication4\obj\Debug\netcoreapp3.1\scopedcss\bundle\WebApplication4.styles.css

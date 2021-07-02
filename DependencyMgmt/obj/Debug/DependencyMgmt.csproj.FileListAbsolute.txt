@@ -1,0 +1,2 @@
+E:\c--siemens-customized-june-2021\DependencyMgmt\obj\Debug\DependencyMgmt.csproj.AssemblyReference.cache
+E:\c--siemens-customized-june-2021\DependencyMgmt\obj\Debug\DependencyMgmt.csproj.CoreCompileInputs.cache

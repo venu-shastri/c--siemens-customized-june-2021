@@ -1,0 +1,16 @@
+E:\c--siemens-customized-june-2021\CSharp8Features\bin\Debug\net5.0\CSharp8Features.exe
+E:\c--siemens-customized-june-2021\CSharp8Features\bin\Debug\net5.0\CSharp8Features.deps.json
+E:\c--siemens-customized-june-2021\CSharp8Features\bin\Debug\net5.0\CSharp8Features.runtimeconfig.json
+E:\c--siemens-customized-june-2021\CSharp8Features\bin\Debug\net5.0\CSharp8Features.runtimeconfig.dev.json
+E:\c--siemens-customized-june-2021\CSharp8Features\bin\Debug\net5.0\CSharp8Features.dll
+E:\c--siemens-customized-june-2021\CSharp8Features\bin\Debug\net5.0\ref\CSharp8Features.dll
+E:\c--siemens-customized-june-2021\CSharp8Features\bin\Debug\net5.0\CSharp8Features.pdb
+E:\c--siemens-customized-june-2021\CSharp8Features\obj\Debug\net5.0\CSharp8Features.csproj.AssemblyReference.cache
+E:\c--siemens-customized-june-2021\CSharp8Features\obj\Debug\net5.0\CSharp8Features.GeneratedMSBuildEditorConfig.editorconfig
+E:\c--siemens-customized-june-2021\CSharp8Features\obj\Debug\net5.0\CSharp8Features.AssemblyInfoInputs.cache
+E:\c--siemens-customized-june-2021\CSharp8Features\obj\Debug\net5.0\CSharp8Features.AssemblyInfo.cs
+E:\c--siemens-customized-june-2021\CSharp8Features\obj\Debug\net5.0\CSharp8Features.csproj.CoreCompileInputs.cache
+E:\c--siemens-customized-june-2021\CSharp8Features\obj\Debug\net5.0\CSharp8Features.dll
+E:\c--siemens-customized-june-2021\CSharp8Features\obj\Debug\net5.0\ref\CSharp8Features.dll
+E:\c--siemens-customized-june-2021\CSharp8Features\obj\Debug\net5.0\CSharp8Features.pdb
+E:\c--siemens-customized-june-2021\CSharp8Features\obj\Debug\net5.0\CSharp8Features.genruntimeconfig.cache

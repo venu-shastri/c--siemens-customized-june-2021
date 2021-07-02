@@ -1,7 +1,7 @@
 E:\c--siemens-customized-june-2021\FrameworkApp\bin\Debug\FrameworkApp.exe.config
 E:\c--siemens-customized-june-2021\FrameworkApp\bin\Debug\FrameworkApp.exe
 E:\c--siemens-customized-june-2021\FrameworkApp\bin\Debug\FrameworkApp.pdb
-E:\c--siemens-customized-june-2021\FrameworkApp\obj\Debug\FrameworkApp.csprojAssemblyReference.cache
 E:\c--siemens-customized-june-2021\FrameworkApp\obj\Debug\FrameworkApp.csproj.CoreCompileInputs.cache
 E:\c--siemens-customized-june-2021\FrameworkApp\obj\Debug\FrameworkApp.exe
 E:\c--siemens-customized-june-2021\FrameworkApp\obj\Debug\FrameworkApp.pdb
+E:\c--siemens-customized-june-2021\FrameworkApp\obj\Debug\FrameworkApp.csproj.AssemblyReference.cache

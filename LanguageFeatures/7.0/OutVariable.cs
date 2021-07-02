@@ -20,7 +20,14 @@ namespace LanguageFeatures._7._0
         }
         static void TestOutVaraible(out int number)
         {
-            number = 10;
+
+            number = new Random().Next();
+            _=  number % 2 == 0 ? "even" : throw new Exception("Invalid Number");
+            if (number % 2 == 0)
+            {
+                throw new Exception("Invalid Number");//statement
+            }
+            
 
         }
     }

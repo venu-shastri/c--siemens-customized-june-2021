@@ -1,0 +1,15 @@
+﻿dotnet new console -o EFGetStarted
+cd EFGetStarted
+
+# Add Provider
+dotnet add package Microsoft.EntityFrameworkCore.Sqlite
+
+#Create the model 
+In the project directory, create Device.cs and Part.cs
+In the project directory, create DeviceContext and Derive From DBContext
+
+#Create Migrations and Update the Database
+dotnet tool install --global dotnet-ef
+dotnet add package Microsoft.EntityFrameworkCore.Design
+dotnet ef migrations add InitialCreate
+dotnet ef database update

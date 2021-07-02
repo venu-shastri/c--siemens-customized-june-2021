@@ -44,8 +44,13 @@ namespace Reusability
 
         public static  Func<string, bool> CheckStringStartWith(string content)
         {
-            Func<string, bool> predicate = (string item) => { return item.StartsWith(content); };
-            return predicate;
+            //Func<string, bool> predicate = (string item) => { return item.StartsWith(content); };
+            bool filter(string item)
+            {
+                return item.StartsWith(content);
+            }
+            return filter;
+            //return predicate;
         }
         public static bool CheckStringEndsWithi(string item)
         {

@@ -12,3 +12,4 @@ E:\c--siemens-customized-june-2021\WhyDelegate\obj\Debug\WhyDelegate.csprojAssem
 E:\c--siemens-customized-june-2021\WhyDelegate\obj\Debug\WhyDelegate.csproj.CoreCompileInputs.cache
 E:\c--siemens-customized-june-2021\WhyDelegate\obj\Debug\WhyDelegate.exe
 E:\c--siemens-customized-june-2021\WhyDelegate\obj\Debug\WhyDelegate.pdb
+E:\c--siemens-customized-june-2021\WhyDelegate\obj\Debug\WhyDelegate.csproj.AssemblyReference.cache
